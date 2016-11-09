@@ -5,13 +5,13 @@ Do you know what those are: notepad / word, virtual machine / container. Discuss
 
 1. Editors
  Create a notepad file and save it as .py file (can’t do it with word)
-Code is just a simple text saved in a file with specific extension. Extension is the ending of the name of the file. File extensions are not required - we can easily save files without any extension. The usage of the extension is to tell the file system with which program to associate the file. Nothing more.
+ Code is just a simple text saved in a file with specific extension. Extension is the ending of the name of the file. File extensions are not required - we can easily save files without any extension. The usage of the extension is to tell the file system with which program to associate the file. Nothing more.
 
-The text files often end with '.txt' but when writing code in python we should end our files with '.py'. When creating html documents, our files will end with '.html'.
-Word documents are not text files. The Word files contain special characters for styling and formatting the text. You can try opening word document with notepad to see yourself.
+ The text files often end with '.txt' but when writing code in python we should end our files with '.py'. When creating html documents, our files will end with '.html'.
+ Word documents are not text files. The Word files contain special characters for styling and formatting the text. You can try opening word document with notepad to see yourself.
 
 2. Virtual machine / container
-It's remote computer somewhere in the network
+ It's remote computer somewhere in the network
 
 ##Codeanywhere
 
