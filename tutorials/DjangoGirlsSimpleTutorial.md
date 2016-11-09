@@ -33,25 +33,25 @@ Codeanywhere is a web tool that allows you to reach a remote computer on the int
   3) Fill in your email and type a password, choose “I’m not a robot” and click on the “Register” button
 
 
-  ![Register](/images/SimpleTutorial/01_sign_up.png)
+  ![Register](images/SimpleTutorial/01_sign_up.png)
 
-  ![Success](/images/SimpleTutorial/02_successful_signup.png)
+  ![Success](images/SimpleTutorial/02_successful_signup.png)
 
   Great! You now have an account. Now open the editor.
 
 
   4) Create a project - choose a name and select Django (Ubuntu). You can type django in the search field to help you find this type of project. Once you’re ready, click the “CREATE” button
 
-  ![Choose Name](/images/SimpleTutorial/03_choose_name.png)
+  ![Choose Name](images/SimpleTutorial/03_choose_name.png)
 
   5) Be patient and wait till the container is ready (your kitchen is being prepared along with providing the basic ingredient for your cake).
 
-  ![Be patient](/images/SimpleTutorial/04_be_patient.png)
+  ![Be patient](images/SimpleTutorial/04_be_patient.png)
 
   6) One useful keyboard shortcut
   One thing that is useful not only here in codeanywhere: When you want to copy something, instead of “right click with the mouse -> Copy” you can press Ctrl and C keys at the same time. Pasting works the same way - just press Ctrl and P together. Try it!
 
-  ![Copy Paste](/images/SimpleTutorial/05_copy_paste.png)
+  ![Copy Paste](images/SimpleTutorial/05_copy_paste.png)
 
   You can close that message box.
 
@@ -72,11 +72,11 @@ Codeanywhere is a web tool that allows you to reach a remote computer on the int
 
 Imagine that when you type https://djangogirls.org in your browser and hit Enter, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
-  ![Letter](/images/SimpleTutorial/letter.png)
+  ![Letter](images/SimpleTutorial/letter.png)
 
 Your letter than travels along the Internet until it gets to one computer (called server) where the djangogirls site lives.
 
-  ![How it works](/images/SimpleTutorial/how_web_works.jpg)
+  ![How it works](images/SimpleTutorial/how_web_works.jpg)
 
 
 
@@ -89,12 +89,12 @@ So, basically, when you have a website, you need to have a server (machine) wher
 ##How Internet looks?
 Well... it looks like this:
 
-  ![internet](/images/SimpleTutorial/internet_1.png)
+  ![internet](images/SimpleTutorial/internet_1.png)
 
 
 Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned servers). Hundreds of thousands of machines! Many, many kilometers of cables around the world!
 
-  ![world](/images/SimpleTutorial/world.png)
+  ![world](images/SimpleTutorial/world.png)
 
 
 It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
@@ -104,12 +104,12 @@ In other words: When you send it, your letter goes to the post office closest to
 It looks like this:
 
 
-  ![travel](/images/SimpleTutorial/travel.png)
+  ![travel](images/SimpleTutorial/travel.png)
 
 
 #III. What happens on the server
 
-  ![web](/images/SimpleTutorial/web_all_1.jpg)
+  ![web](images/SimpleTutorial/web_all_1.jpg)
 
 The server is the place where the site lives. But what does that mean?
 Well.. The site is actually a project, and the project is a bunch of files (Remember we have created our project already - we have our bunch of files on a remote server. Let’s call this project Django)
@@ -118,7 +118,7 @@ Well.. The site is actually a project, and the project is a bunch of files (Reme
 So, Django has 3 main parts (files): A list of functions, functions that take the message and return answers, and templates, used to write the response letter down.
 
 
-  ![Django tree](/images/SimpleTutorial/dj_project.jpg)
+  ![Django tree](images/SimpleTutorial/dj_project.jpg)
 
 
 
