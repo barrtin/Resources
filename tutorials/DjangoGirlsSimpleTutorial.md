@@ -168,30 +168,30 @@ Well… You already know the answer - we need to provide the 3 base components:
   ![Urls](images/SimpleTutorial/10_urls.png)
 
 
-You do not have to understand what exactly those lines mean. The important thing is that this file contains a list of paths. The server uses this list to check who’s responsible for the requested path. Pay attention to this row for example:
+ You do not have to understand what exactly those lines mean. The important thing is that this file contains a list of paths. The server uses this list to check who’s responsible for the requested path. Pay attention to this row for example:
   url(r'^admin/', admin.site.urls),
-This row says that when you ask the server about  http://mysitel.com/admin/  the server should give this request to something called “admin.site.urls” and it will handle it.
+ This row says that when you ask the server about  http://mysitel.com/admin/  the server should give this request to something called “admin.site.urls” and it will handle it.
 
 
-Let’s put one more item in the server’s list.
-We want to tell our server: “Hey, server, when someone asks about http://mysitel.com/home/” you can give it to my view (let’s call it “home_view”).
+ Let’s put one more item in the server’s list.
+ We want to tell our server: “Hey, server, when someone asks about http://mysitel.com/home/” you can give it to my view (let’s call it “home_view”).
 
 
-Copy the following lines and replace the whole content of the urls.py file with the following lines:
+ Copy the following lines and replace the whole content of the urls.py file with the following lines:
 
 
     from django.conf.urls import url
     from django.contrib import admin
     from .views import home_view
 
-    urlpatterns = [
-        url(r'^admin/', admin.site.urls),
-        url(r'^home/', home_view),
-    ]
+     urlpatterns = [
+         url(r'^admin/', admin.site.urls),
+         url(r'^home/', home_view),
+     ]
 
   ![Urls changed](images/SimpleTutorial/10_urls_changed.png)
 
-Do you notice what changed?
+ Do you notice what changed?
 
 
 2. Create file named views.py.
@@ -200,9 +200,9 @@ Do you notice what changed?
 
   ![Create file pop-up](images/SimpleTutorial/12_create_file_popup.png)
 
-Since we told our server that home url will be handled by something called home_view, it’s time to create that view.
+ Since we told our server that home url will be handled by something called home_view, it’s time to create that view.
 
-Copy those lines to your views.py file and take a few seconds to explore it.
+ Copy those lines to your views.py file and take a few seconds to explore it.
 
 
     from django.shortcuts import render
@@ -210,42 +210,46 @@ Copy those lines to your views.py file and take a few seconds to explore it.
     def home_view(request):
         return render(request, 'home.html')
 
-Those few lines mean “I’m home_view and I expect someone to give me a request. When they give me a request, I’ll give them a template” - called home.html
+ Those few lines mean “I’m home_view and I expect someone to give me a request. When they give me a request, I’ll give them a template” - called home.html
 
 3. Well let’s now create this template. First create folder named templates.
 
   ![Templates folder](images/SimpleTutorial/13_templates_folder.png)
 
-Add a file named home.html to that folder (you already know how ;) )
+ Add a file named home.html to that folder (you already know how ;) )
 
-Copy the following lines into the template file.
-
-`    <!DOCTYPE html>
+ Copy the following lines into the template file.
+ 
+```
+    <!DOCTYPE html>
     <html>
     <body>
     <h1>Hello!</h1>
     <p>Welcome to my awesome page!!</p>
     </body>
     </html>
-`
-  ![Templates folder](images/SimpleTutorial/13_template.png)
+```
+
+ ![Templates folder](images/SimpleTutorial/13_template.png)
 
 4. One last detail: Every project has its secrets and there are many files and folders that we don’t need to understand. Don’t think about them right now. As in the real world… we don’t always do things we understand entirely. And that’s totally fine.
 
 
-Do you know how the car actually works? Do you know how the engine of your car works? - No, of course. But you still drive it, right?
-Well… Unfortunately from time to time you need to put some gas in the tank - no need to know where it goes after that and how it’s used.
+ Do you know how the car actually works? Do you know how the engine of your car works? - No, of course. But you still drive it, right?
+ Well… Unfortunately from time to time you need to put some gas in the tank - no need to know where it goes after that and how it’s used.
 
 
-For our project we’ll need to do something similar. Do not think about why … Just follow the instructions:
+ For our project we’ll need to do something similar. Do not think about why … Just follow the instructions:
 
-Find the settings.py file and find the line that says…. TEMPLATES = …
-And few lines below you’ll see another line:
-'DIRS': [],
-Replace this line with the following:
+ Find the settings.py file and find the line that says…. TEMPLATES = …
+ And few lines below you’ll see another line:
+  'DIRS': [],
 
-
-    'DIRS': [os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates")],
+ Replace this line with the following:
+ 
+```
+'DIRS': [os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates")],
+```
 
   ![Template settings](images/SimpleTutorial/14_template_settings.png)
 
