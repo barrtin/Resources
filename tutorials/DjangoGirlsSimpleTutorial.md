@@ -283,10 +283,16 @@ Choose your path further - depending on your mood or interests, choose some of t
 * Try some python
 * Shell - try navigating to your project's folder and run the server manually
 * Create app (run the server using manage.py instead of the “RUN” button)
+* What is a Database (or where my data is saved).
 * Create a model / see it in the admin.
-* Andrei’s list of topics
+* Here's a list of topics you can choose from: https://github.com/GirlsWhoCodeInBulgaria/Resources/tree/master/stage_unknown
 
 You can find some additional help and instructions for some of the suggested activities. Ask your coach for assistance.
+
+Python
+-
+
+You can try https://repl.it/languages/python3
 
 Shell
 -
@@ -316,7 +322,6 @@ example:
 
 
 Try them yourself. See what happens. Explore. Try opening a file from the command prompt. Try typing "explorer ." in Windows. What happens?
-
 
 ## Materials:
 
