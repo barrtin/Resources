@@ -220,7 +220,7 @@ Well… You already know the answer - we need to provide the 3 base components:
 
  Copy the following lines into the template file.
  
-```
+ ```
     <!DOCTYPE html>
     <html>
     <body>
@@ -228,7 +228,7 @@ Well… You already know the answer - we need to provide the 3 base components:
     <p>Welcome to my awesome page!!</p>
     </body>
     </html>
-```
+ ```
 
  ![Templates folder](images/SimpleTutorial/13_template.png)
 
