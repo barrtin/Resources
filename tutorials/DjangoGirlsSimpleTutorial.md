@@ -179,7 +179,7 @@ Well… You already know the answer - we need to provide the 3 base components:
 
  Copy the following lines and replace the whole content of the urls.py file with the following lines:
 
-
+```
     from django.conf.urls import url
     from django.contrib import admin
     from .views import home_view
@@ -188,7 +188,7 @@ Well… You already know the answer - we need to provide the 3 base components:
          url(r'^admin/', admin.site.urls),
          url(r'^home/', home_view),
      ]
-
+```
   ![Urls changed](images/SimpleTutorial/10_urls_changed.png)
 
  Do you notice what changed?
@@ -204,11 +204,12 @@ Well… You already know the answer - we need to provide the 3 base components:
 
  Copy those lines to your views.py file and take a few seconds to explore it.
 
-
+```
     from django.shortcuts import render
 
     def home_view(request):
         return render(request, 'home.html')
+```
 
  Those few lines mean “I’m home_view and I expect someone to give me a request. When they give me a request, I’ll give them a template” - called home.html
 
@@ -266,8 +267,12 @@ Great, and now…. The sweetest part!
 Pay attention to the url from your first page.
 It’s the url where you will see your site in a while, so copy it.
 
+
   ![Note the url](images/SimpleTutorial/05_note_the_url_1.png)
 
+If you can't find it - click with right button on the root directory in your path tree and Select **Info** 
+
+ ![Template settings](images/SimpleTutorial/info.png)
 
 Copy that url and paste it to your browser. Do not forget “ :8000” behind. Hit Enter and… enjoy :)
 
